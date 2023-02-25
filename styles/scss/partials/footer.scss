@@ -1,0 +1,49 @@
+@mixin flex(){
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin size(){
+    width: 45vw;
+    height: 22vh;
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #2B2B2B;
+    color: white;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .footer-top{
+        @include flex();
+        .welcome-message{
+            @include size();
+            text-align: center;
+            a{
+                img{
+                    width: 60px;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+            }
+            border-bottom: 1px solid white;
+        }
+        .img{
+            @include size();
+        }
+    }
+    .footer-bottom{
+        @include flex();
+        .logo{
+            @include size();
+        }
+        .links{
+            margin-top: 10vh;
+            @include size();
+            @include flex();
+        }
+    }
+}

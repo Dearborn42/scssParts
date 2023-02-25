@@ -1,0 +1,44 @@
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #2B2B2B;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer-top .welcome-message {
+  width: 45vw;
+  height: 22vh;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+footer .footer-top .welcome-message a img {
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+}
+footer .footer-top .img {
+  width: 45vw;
+  height: 22vh;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer-bottom .logo {
+  width: 45vw;
+  height: 22vh;
+}
+footer .footer-bottom .links {
+  margin-top: 10vh;
+  width: 45vw;
+  height: 22vh;
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=footer.css.map */
