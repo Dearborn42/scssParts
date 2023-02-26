@@ -1,0 +1,28 @@
+.top-container {
+  background-image: url('finall-removebg-preview.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.top-container .nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 20vh;
+}
+.top-container .nav-container h1 {
+  width: 20;
+  height: 20;
+}
+.top-container .nav-container nav {
+  width: 70vw;
+  height: 20vh;
+}
+.top-container .nav-container nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.top-container .nav-container nav ul li {
+  width: 15vw;
+  height: 20vh;
+}/*# sourceMappingURL=nav2.css.map */
