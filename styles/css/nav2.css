@@ -1,6 +1,11 @@
+body {
+  margin: 0;
+}
+
 .top-container {
-  background-image: url('finall-removebg-preview.png');
+  background-image: url("cookie.jpg");
   background-size: cover;
+  color: white;
   width: 100vw;
   height: 100vh;
 }
@@ -8,21 +13,27 @@
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
-  height: 20vh;
+  height: 10vh;
 }
-.top-container .nav-container h1 {
-  width: 20;
-  height: 20;
+.top-container .nav-container h2 {
+  width: 20vw;
+  height: 10vh;
 }
 .top-container .nav-container nav {
   width: 70vw;
-  height: 20vh;
+  height: 10vh;
 }
 .top-container .nav-container nav ul {
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
+  margin-top: 5vh;
 }
 .top-container .nav-container nav ul li {
   width: 15vw;
-  height: 20vh;
+  height: 20px;
+  text-align: center;
+}
+.top-container .nav-container nav ul li:hover {
+  border-bottom: 1px solid white;
 }/*# sourceMappingURL=nav2.css.map */

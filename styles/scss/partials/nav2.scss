@@ -4,23 +4,35 @@
     height: $height;
 }
 
+body{
+    margin: 0;
+}
+
 .top-container{
+    background-image: url("cookie.jpg");
     background-size: cover;
+    color: white;
     @include size(100vw, 100vh);
     .nav-container{
         display: flex;
         justify-content: space-evenly;
-        @include size(100vw, 20vh);
-        h1{
-            @include size(20, 20);
+        @include size(100vw, 10vh);
+        h2{
+            @include size(20vw, 10vh);
         }
         nav{
-            @include size(70vw, 20vh);
+            @include size(70vw, 10vh);
             ul{
                 display: flex;
                 justify-content: space-evenly;
+                list-style: none;
+                margin-top: 5vh;
                 li{
-                    @include size(15vw, 20vh);
+                    @include size(15vw, 20px);
+                    text-align: center;
+                }
+                li:hover{
+                    border-bottom: 1px solid white;
                 }
             }
         }
