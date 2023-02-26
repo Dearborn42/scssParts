@@ -7,34 +7,39 @@
 body{
     margin: 0;
 }
-
-.top-container{
-    background-image: url("cookie.jpg");
-    background-size: cover;
+.nav-container {
+    position: fixed;
+    top: 0;
     color: white;
-    @include size(100vw, 100vh);
-    .nav-container{
-        display: flex;
-        justify-content: space-evenly;
-        @include size(100vw, 10vh);
-        h2{
-            @include size(20vw, 10vh);
-        }
-        nav{
-            @include size(70vw, 10vh);
-            ul{
-                display: flex;
-                justify-content: space-evenly;
-                list-style: none;
-                margin-top: 5vh;
-                li{
-                    @include size(15vw, 20px);
-                    text-align: center;
-                }
-                li:hover{
-                    border-bottom: 1px solid white;
-                }
+    display: flex;
+    justify-content: space-evenly;
+    @include size(100vw, 10vh);
+
+    h2 {
+        @include size(20vw, 10vh);
+    }
+
+    nav {
+        @include size(70vw, 10vh);
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            margin-top: 1vh;
+
+            li {
+                @include size(15vw, 38px);
+                text-align: center;
+            }
+
+            li:hover {
+                border-bottom: 1px solid white;
             }
         }
     }
+}
+.top-container{
+    color: white;
+    @include size(100vw, 100vh);
 }

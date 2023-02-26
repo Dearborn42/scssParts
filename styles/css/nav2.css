@@ -2,38 +2,40 @@ body {
   margin: 0;
 }
 
-.top-container {
-  background-image: url("cookie.jpg");
-  background-size: cover;
+.nav-container {
+  position: fixed;
+  top: 0;
   color: white;
-  width: 100vw;
-  height: 100vh;
-}
-.top-container .nav-container {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
   height: 10vh;
 }
-.top-container .nav-container h2 {
+.nav-container h2 {
   width: 20vw;
   height: 10vh;
 }
-.top-container .nav-container nav {
+.nav-container nav {
   width: 70vw;
   height: 10vh;
 }
-.top-container .nav-container nav ul {
+.nav-container nav ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  margin-top: 5vh;
+  margin-top: 1vh;
 }
-.top-container .nav-container nav ul li {
+.nav-container nav ul li {
   width: 15vw;
-  height: 20px;
+  height: 38px;
   text-align: center;
 }
-.top-container .nav-container nav ul li:hover {
+.nav-container nav ul li:hover {
   border-bottom: 1px solid white;
+}
+
+.top-container {
+  color: white;
+  width: 100vw;
+  height: 100vh;
 }/*# sourceMappingURL=nav2.css.map */

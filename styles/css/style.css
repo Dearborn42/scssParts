@@ -3,9 +3,11 @@ body {
 }
 
 .top-container {
-  background-image: "download(1).jfif";
+  color: white;
   width: 100vw;
   height: 100vh;
+  background-image: url("test.png");
+  background-size: cover;
 }
 .top-container .nav-container {
   display: flex;
