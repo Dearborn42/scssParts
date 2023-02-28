@@ -1,11 +1,7 @@
-
+@import "/styles/scss/utils/pageReset.scss";
 @mixin size($width, $height){
     width: $width;
     height: $height;
-}
-
-body{
-    margin: 0;
 }
 .nav-container {
     position: fixed;

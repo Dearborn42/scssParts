@@ -1,3 +1,6 @@
+@import "/styles/scss/utils/pageReset.scss";
+
+
 @mixin flex(){
     display: flex;
     justify-content: space-evenly;

@@ -1,10 +1,7 @@
+@import "/styles/scss/utils/pageReset.scss";
+
 $main-color: #7800C6;
 $secondary-color: #2B2B2B;
-
-body{
-    margin: 0;
-}
-
 nav{
     .header-top{
         overflow: hidden;
