@@ -10,6 +10,7 @@
 
     h2 {
         @include size(20vw, 10vh);
+        font-size: larger;
     }
 
     nav {

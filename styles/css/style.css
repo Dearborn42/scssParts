@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 nav .header-top {
   overflow: hidden;
   background-color: #7800C6;
@@ -82,6 +90,7 @@ nav .logo {
 .nav-container h2 {
   width: 20vw;
   height: 10vh;
+  font-size: larger;
 }
 .nav-container nav {
   width: 70vw;
@@ -181,12 +190,4 @@ footer .footer-bottom .links {
 }
 .container .row:last-of-type {
   margin-right: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
 }/*# sourceMappingURL=style.css.map */

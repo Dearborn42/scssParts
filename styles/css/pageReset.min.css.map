@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/pageReset.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UACA,SACA,aACA","file":"pageReset.min.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/utils/pageReset.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UACA,SACA,aACA","file":"pageReset.min.css"}
