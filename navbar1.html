@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="./styles/css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="header-top">
-            <p>Call us today 602-290-1586</p>
-        </div>
-        <div class="header-body">
-            <div><a href=""><img class="logo" src="./finall-removebg-preview.png"></a></div>
-            <div class="header-tags">
-                <a href="index.html">Home</a>
-                <a href="service.html">Services</a>
-                <a href="support.html">Support</a>
+        <nav>
+            <div class="header-top">
+                <p>Call us today 602-290-1586</p>
             </div>
-        </div>
-    </nav>
+            <div class="header-body">
+                <div><a href=""><img class="logo" src="./finall-removebg-preview.png"></a></div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="service.html">Services</a>
+                        <a href="support.html">Support</a>
+                    </div>
+                </div>
+                <div class="header-tags">
+                    <a href="index.html">Home</a>
+                    <a href="service.html">Services</a>
+                    <a href="support.html">Support</a>
+                </div>
+            </div>
+        </nav>
+        <script src="expand.js"></script>
 </body>
 </html>

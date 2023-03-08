@@ -1,8 +1,11 @@
-
+@import "./utils/margin.scss", "./utils/size.scss", "./utils/padding.scss";
 $main-color: #7800C6;
 $secondary-color: #2B2B2B;
-nav{
-    .header-top{
+
+
+
+nav {
+    .header-top {
         overflow: hidden;
         background-color: $main-color;
         position: fixed;
@@ -10,14 +13,16 @@ nav{
         top: 0px;
         z-index: 5;
         height: 30px;
-        p{
+
+        p {
             color: white;
             text-align: center;
             margin-top: 5px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
     }
-    .header-body{
+
+    .header-body {
         overflow: hidden;
         background-color: $secondary-color;
         position: fixed;
@@ -25,6 +30,7 @@ nav{
         top: 0px;
         z-index: 3;
         box-shadow: 0px 0px 10px $main-color;
+
         a {
             float: left;
             color: white;
@@ -36,21 +42,20 @@ nav{
             border-radius: 5px;
         }
     }
-    .header-tags{
+    .dropdown{
+        display: none;
+    }
+    .header-tags {
         float: right;
         margin-top: 55px;
         margin-right: 20px;
         font-weight: lighter;
+
         a {
             float: left;
             color: white;
             text-align: center;
-            padding: {
-                top: 12px;
-                bottom: 12px;
-                left: 5px;
-                right: 5px;
-            }
+            @include padding(12px, 5px, 12px, 5px);
             text-decoration: none;
             font-size: 18px;
             line-height: 25px;
@@ -59,6 +64,7 @@ nav{
             margin-bottom: -10px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+
         a:hover {
             background-color: #343434;
             font-weight: bolder;
@@ -69,10 +75,65 @@ nav{
             border-image: linear-gradient(to right, #008080, $main-color) 1;
         }
     }
+
     .logo {
-        margin-top: 20px;
-        margin-bottom: -15px;
-        width: 260px;
-        height: 90px;
+        @include margin(20px, 0, -15px, 0);
+        @include size(260px, 90px);
+    }
+}
+
+
+@media (max-width: 640px) {
+    .header-tags {
+        display: none;
+    }
+
+    nav {
+        .dropdown {
+            display: block;
+            margin-top: 55px;
+            margin-right: 20px;
+            font-weight: lighter;
+            position: relative;
+            display: inline-block;
+            float: right;
+
+            a:hover {
+                background-color: #ddd;
+            }
+        }
+
+        .dropbtn {
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: fixed;
+            background-color: #f1f1f1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            @include size(104px, 160px);
+
+            a {
+                color: rgb(12, 9, 9);
+                text-decoration: none;
+                display: block;
+            }
+
+        }
+
+        .show {
+            display: block;
+        }
     }
 }

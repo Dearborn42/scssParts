@@ -32,6 +32,9 @@ nav .header-body a {
   line-height: 25px;
   border-radius: 5px;
 }
+nav .dropdown {
+  display: none;
+}
 nav .header-tags {
   float: right;
   margin-top: 55px;
@@ -43,9 +46,9 @@ nav .header-tags a {
   color: white;
   text-align: center;
   padding-top: 12px;
+  padding-right: 5px;
   padding-bottom: 12px;
   padding-left: 5px;
-  padding-right: 5px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
@@ -65,7 +68,55 @@ nav .header-tags a:hover {
 }
 nav .logo {
   margin-top: 20px;
+  margin-right: 0;
   margin-bottom: -15px;
+  margin-left: 0;
   width: 260px;
   height: 90px;
+}
+
+@media (max-width: 640px) {
+  .header-tags {
+    display: none;
+  }
+  nav .dropdown {
+    display: block;
+    margin-top: 55px;
+    margin-right: 20px;
+    font-weight: lighter;
+    position: relative;
+    display: inline-block;
+    float: right;
+  }
+  nav .dropdown a:hover {
+    background-color: #ddd;
+  }
+  nav .dropbtn {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  nav .dropbtn:hover,
+nav .dropbtn:focus {
+    background-color: black;
+  }
+  nav .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 104px;
+    height: 160px;
+  }
+  nav .dropdown-content a {
+    color: rgb(12, 9, 9);
+    text-decoration: none;
+    display: block;
+  }
+  nav .show {
+    display: block;
+  }
 }/*# sourceMappingURL=nav1.css.map */
